@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kodlrprojec/Screen/mobileScreen/firstSliderbar.dart';
 import 'package:kodlrprojec/Screen/mobileScreen/itemMenuBar.dart';
+import 'package:kodlrprojec/Screen/mobileScreen/promotionitems.dart';
 import 'package:kodlrprojec/constants/appconstants.dart';
 
 class MainMobileScreen extends StatelessWidget {
@@ -17,6 +18,9 @@ class MainMobileScreen extends StatelessWidget {
           SizedBox(height: 10),
           titleWidget("Top Categories"),
           ItemMenuBar(),
+          SizedBox(height: 10),
+          titleWidget("Promotional Products"),
+          PromotionItems(items: promotionItemsList),
         ],
       ),
     );
